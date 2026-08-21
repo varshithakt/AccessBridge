@@ -1,5 +1,5 @@
 (() => {
-  if (window.top !== window || document.getElementById('accessbridge-assistant')) return;
+  if (document.getElementById('accessbridge-assistant')) return;
   const state = { fields: [], index: 0, recognition: null, active: false };
   const speak = (text) => {
     speechSynthesis.cancel();
