@@ -56,3 +56,9 @@ Register → choose **Visual Assistance** and English/Kannada → browse or voic
 - Speech recognition depends on the browser (Chrome/Edge generally support it); text inputs remain fully usable everywhere.
 - The document endpoint safely accepts PDFs/images and reports processing status, but OCR/extraction is deferred.
 - An external LLM adapter is intentionally not enabled until an API provider is selected; fallback help is used instead.
+
+## Karnataka official-portal assistance
+
+`portal-extension/` contains a Chrome/Edge extension for the Nadakacheri portal. It detects visible fields, reads them aloud, accepts spoken answers, and fills the active field after the user explicitly starts the guide. Load it at `chrome://extensions` → enable **Developer mode** → **Load unpacked** → select `portal-extension`.
+
+The extension intentionally excludes Aadhaar, password, OTP, CAPTCHA and submit controls. Users complete identity verification, payment and final submission directly on the official portal.

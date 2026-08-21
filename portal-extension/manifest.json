@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AccessBridge Karnataka Portal Assistant",
+  "version": "1.0.0",
+  "description": "Voice-guided, accessible assistance for Karnataka Nadakacheri forms.",
+  "content_scripts": [{
+    "matches": [
+      "https://nadakacheri.karnataka.gov.in/*",
+      "http://nadakacheri.karnataka.gov.in/*",
+      "https://*.nadakacheri.karnataka.gov.in/*"
+    ],
+    "js": ["content.js"],
+    "css": ["assistant.css"],
+    "run_at": "document_idle"
+  }]
+}
